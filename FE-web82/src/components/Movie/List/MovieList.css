@@ -1,0 +1,40 @@
+.movie_list .movie_list_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.movie_list .movie_list_header h5 {
+    font-size: 20px;
+}
+
+.movie_list .movie_list_header .movie_list_header_next_btn {
+    height: 30%;
+}
+
+.movie_list .movie_list_data {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.movie_list .movie_list_data .movie_list_data_item {
+    width: 20%;
+    cursor: pointer;
+} 
+
+.movie_list .movie_list_data .movie_list_data_item .movie_list_data_item_image
+{
+    width: 100%;
+}
+
+.movie_list .movie_list_data .movie_list_data_item .movie_list_data_item_name {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.movie_list .movie_list_data .movie_list_data_item .movie_list_data_item_info {
+    text-align: left;
+}

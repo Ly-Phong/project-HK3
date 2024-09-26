@@ -1,0 +1,20 @@
+.movie_list_container {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie_list_container_modal
+{
+    position: fixed;
+    z-index: 1;
+    padding: 8% 0 0 25%;
+    /* left: 25%;
+    top: 8%; */
+    width: 50%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+}

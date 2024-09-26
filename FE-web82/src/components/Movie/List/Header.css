@@ -1,0 +1,25 @@
+.movie_list_header_container {
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between
+}
+.movie_list_header_container .movie_list_header_container_left {
+    width: 3%;
+    margin: 20px;
+}
+
+.movie_list_header_container .movie_list_header_container_left .movie_list_header_menu_icon_left
+{
+    width: 100%;
+}
+
+.movie_list_header_container .movie_list_header_container_right {
+    width: 3%;
+    margin: 20px;
+}
+
+.movie_list_header_container .movie_list_header_container_right .movie_list_header_menu_icon_right
+{
+    width: 100%;
+}
