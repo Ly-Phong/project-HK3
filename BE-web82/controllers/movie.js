@@ -123,8 +123,7 @@ exports.updateMovie = async (req, res) => {
             message: "Cập nhật phim thất bại. Phim này không tồn tại",
           });
         }
-      }
-      if (err) {
+      } else {
         res.status(400).json({
           message: "Tạo phim thất bại. Tải lên hình ảnh thất bại",
         });

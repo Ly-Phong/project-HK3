@@ -28,11 +28,11 @@ app.use(router);
 const connectDb = async () => {
   try {
     await mongoose.connect(`${process.env.MONGODB_URL}/${process.env.DB}`);
-    console.log("Kết nối cơ sở dữ liệu thành công");
+    console.log("Kết nối mongoDB thành công");
     const isCreateDefaultUserSuccess = await userController.register();
     if (isCreateDefaultUserSuccess) {
       console.log(
-        "Tạo người dùng mặc định thành công. Xem tệp env để biết thông tin tài khoản."
+        "Tạo người dùng thành công. truy cập env để biết thông tin tài khoản."
       );
     }
   } catch (error) {
@@ -42,5 +42,5 @@ const connectDb = async () => {
 connectDb();
 
 app.listen("8080", () => {
-  console.log("Máy chủ đang chạy");
+  console.log("Sever is running!");
 });

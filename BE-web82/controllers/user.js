@@ -42,7 +42,7 @@ exports.loginUser = async (req, res) => {
   if (userFromDB && isCorrectPassword) {
     const accessTokenSecret = process.env.ACCESSS_TOKEN_SECERT_KEY;
     const accessToken = jwt.sign({ id: userFromDB.id }, accessTokenSecret, {
-      expiresIn: "60*60*24",
+      expiresIn: "2h",
     });
     req.session.isLogin = true;
     res.status(200).send({

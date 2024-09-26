@@ -16,6 +16,6 @@ exports.jwtCheckMiddleware = (req, res, next) => {
             }
         });
     } else {
-        res.status(401).json({ message: 'Thiếu access token. Vui lòng chạy API đăng nhập sau đó dán access token mà bạn nhận được vào tệp /api/axiosIntance.js.' });
+        res.status(401).json({ message: 'Thiếu access_token. Vui lòng đăng nhập lại để lấy API sau đó dán access token mà bạn nhận được vào tệp /api/axiosIntance.js.' });
     }
 }
